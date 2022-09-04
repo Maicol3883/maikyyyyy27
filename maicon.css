@@ -1,0 +1,103 @@
+
+*{
+    padding: 0;
+     margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+   
+body{
+  
+  background:  #fe998f;
+     }
+
+ div{
+        border: 4px solid #5cdde2;
+        width: 200px;
+        height: 200px;
+        background: linear-gradient( 190deg, rgb(112, 245, 141), rgb(105, 105, 234)  );
+        margin-left: auto;
+        margin-right: auto;
+        margin: 0 auto;
+        transform: translateY(100px);
+        animation:skew 3s infinite;
+        transform: skew(20deg);
+        animation-direction:alternate;
+     }
+
+
+.contenedor{
+    
+    perspective: 2000px;
+    perspective-origin: 0px -1000px;
+    
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin:  0 auto;
+    transform: translateY(150px) ;
+    
+}
+.cubo{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateY(120deg);
+    animation: girar 5s infinite linear;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin:  0 auto;
+    
+}
+
+@keyframes girar {
+      from {
+        transform: rotateY(0deg);
+    }
+     to {
+        transform: rotateY(360deg);
+
+    }
+}
+
+.cara{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+#uno{
+    background: rebeccapurple;
+    transform: translateZ(100px) ;
+}
+#dos{
+    background: #66cdaa;
+    transform:   translateX(100px)rotateY(90deg)  ;
+}
+#tres{
+    background: yellowgreen;
+    transform: translateZ(-100px);
+}
+#cuatro{
+    background: brown;
+    transform: translateX(-100px) rotateY(90deg);
+
+}
+
+#cinco{
+    background: seagreen;
+    transform: translateY(-100px) rotateX(90deg);
+
+}
+#seis{
+    background: darkblue;
+    transform: translateY(100px) rotateX(90deg);
+}
+img{
+    position: absolute;
+    width: 100%;
+    height: 100%; 
+    }
